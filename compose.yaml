@@ -1,0 +1,14 @@
+services:
+  question-service:
+    build:
+      context: ./question-service
+    ports:
+      - "8001:8000"
+
+  attempt-service:
+    build:
+      context: ./attempt-service
+    ports:
+      - "8002:8000"
+    depends_on:
+      - question-service
