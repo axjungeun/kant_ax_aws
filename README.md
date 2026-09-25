@@ -1,7 +1,6 @@
 # AI Exam Coach Mini MSA
 
 FastAPI와 Docker를 이용하여 구현한 간단한 MSA 기반 문제 풀이·채점 백엔드입니다.
-
 ## Architecture
 
 사용자
@@ -21,6 +20,13 @@ Question Service
 - Docker
 - Docker Compose
 - HTTPX
+
+## Swagger
+
+Docker Compose 실행 후 아래 주소에서 API를 테스트할 수 있습니다.
+
+- Question Service: http://localhost:8001/docs
+- Attempt Service: http://localhost:8002/docs
 
 ## Services
 
